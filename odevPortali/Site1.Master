@@ -1,0 +1,90 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site1.master.cs" Inherits="odevPortali.Site1" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+    <title>Ödev Dağıtım Portalı | Volkan Kaya</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="css/bootstrap.css" rel="stylesheet">
+<link href="css/style.css" rel="stylesheet">
+<link href="font/css/fontello.css" rel="stylesheet">
+<link href='http://fonts.googleapis.com/css?family=Droid+Sans:400,700' rel='stylesheet' type='text/css'>
+<script src="https://code.jquery.com/jquery-1.11.3.js"></script>
+<script src="js/bootstrap.js" type="text/javascript"></script>
+
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+
+    <div class="navbar">
+  <div class="navbar-inner">
+    <div class="container"> <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse"> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </a> <a class="brand" href="odevListe.aspx"><img src="img/logo.png"  alt=""></a>
+      <ul class="nav nav-collapse pull-right">
+        <li><a href="odevListe.aspx" class="active"><i class="icon-user"></i>Ödev Listesi</a></li>
+        <li><a href="odevYukle.aspx" class="active"><i class="icon-doc-text"></i> Ödev Yükle</a></li>
+        <li><a href="odevKaldir.aspx" class="active"><i class="icon-doc-text"></i>Ödev Kaldır</a></li>
+      </ul>
+      <div class="nav-collapse collapse"></div>
+    </div>
+</div>
+</div>
+
+    <div>
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+    </div>
+    <div class="footer" href="css/bootstrap-responsive.css" rel="stylesheet" type="text/css">
+  <div class="container">
+    <p class="pull-left"> 
+    
+                  <%
+                    if (Session["ogr_id"] == null)
+                    {
+                  %>
+                        <a href="giris.aspx">Oturum Aç</a>    
+                  <%
+                    }
+                    else
+                    { 
+                     %>
+                   Hoşgeldiniz <b> <%=Session["ogrKadi"] %></b> - 
+                  <a href="kapat.aspx">Oturumu Kapat</a> - 
+                  <%if (Session["ogrAdmin"].ToString()=="1") { %>
+                   <a href="ogrenciListe.aspx">Admin Paneli</a>
+                   <% }%>
+                  <% }%></p>
+
+
+    <p class="pull-right"><a href="#myModal" role="button" data-toggle="modal"> <i class="icon-mail"></i> İLETİŞİM</a></p>
+  </div>
+</div>
+<div id="myModal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-header">
+    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+    <h3 id="myModalLabel"><i class="icon-mail"></i> İletişim Formu</h3>
+  </div>
+  <div class="modal-body">
+    <form action="#">
+      <input type="text" placeholder="İsminiz">
+      <input type="text" placeholder="Email Adresiniz">
+      <input type="text" placeholder="Website (İsteğe Göre)">
+      <textarea rows="3" style="width:80%"></textarea>
+      <br>
+      <button type="submit" class="btn btn-large"><i class="icon-paper-plane"></i> GÖNDER</button>
+    </form>
+  </div>
+</div>
+<script src="js/jquery-1.10.1.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script>
+    $('#myModal').modal('hidden')
+</script>
+    </form>
+</body>
+
+</html>

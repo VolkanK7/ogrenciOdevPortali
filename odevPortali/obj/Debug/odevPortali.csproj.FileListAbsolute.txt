@@ -1,0 +1,22 @@
+c:\users\volkan-pc\documents\visual studio 2010\Projects\odevPortali\odevPortali\bin\odevPortali.dll
+c:\users\volkan-pc\documents\visual studio 2010\Projects\odevPortali\odevPortali\bin\odevPortali.pdb
+c:\users\volkan-pc\documents\visual studio 2010\Projects\odevPortali\odevPortali\obj\Debug\ResolveAssemblyReference.cache
+c:\users\volkan-pc\documents\visual studio 2010\Projects\odevPortali\odevPortali\obj\Debug\odevPortali.dll
+c:\users\volkan-pc\documents\visual studio 2010\Projects\odevPortali\odevPortali\obj\Debug\odevPortali.pdb
+C:\Users\volkan-PC\Desktop\odevPortali\odevPortali\bin\odevPortali.dll
+C:\Users\volkan-PC\Desktop\odevPortali\odevPortali\bin\odevPortali.pdb
+C:\Users\volkan-PC\Desktop\odevPortali\odevPortali\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\volkan-PC\Desktop\odevPortali\odevPortali\obj\Debug\odevPortali.dll
+C:\Users\volkan-PC\Desktop\odevPortali\odevPortali\obj\Debug\odevPortali.pdb
+C:\Users\volkan-PC\Desktop\odevPortali (C#)\odevPortali\bin\odevPortali.dll
+C:\Users\volkan-PC\Desktop\odevPortali (C#)\odevPortali\bin\odevPortali.pdb
+C:\Users\volkan-PC\Desktop\odevPortali (C#)\odevPortali\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\volkan-PC\Desktop\odevPortali (C#)\odevPortali\obj\Debug\odevPortali.dll
+C:\Users\volkan-PC\Desktop\odevPortali (C#)\odevPortali\obj\Debug\odevPortali.pdb
+C:\Users\volkan-PC\Desktop\odevPortali (C#)\odevPortali\bin\CKEditor.NET.dll
+C:\Users\volkan-PC\Desktop\En Yeni Ödevler !!!\odevPortali (C#)\odevPortali\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\volkan-PC\Desktop\En Yeni Ödevler !!!\odevPortali (C#)\odevPortali\obj\Debug\odevPortali.dll
+C:\Users\volkan-PC\Desktop\En Yeni Ödevler !!!\odevPortali (C#)\odevPortali\bin\odevPortali.dll
+C:\Users\volkan-PC\Desktop\En Yeni Ödevler !!!\odevPortali (C#)\odevPortali\bin\odevPortali.pdb
+C:\Users\volkan-PC\Desktop\En Yeni Ödevler !!!\odevPortali (C#)\odevPortali\bin\CKEditor.NET.dll
+C:\Users\volkan-PC\Desktop\En Yeni Ödevler !!!\odevPortali (C#)\odevPortali\obj\Debug\odevPortali.pdb

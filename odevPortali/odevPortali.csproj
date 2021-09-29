@@ -1,0 +1,253 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{A75F0FE6-02AC-4356-BF5A-8E6DF43B3AF8}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>odevPortali</RootNamespace>
+    <AssemblyName>odevPortali</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CKEditor.NET, Version=3.6.4.0, Culture=neutral, PublicKeyToken=e379cdf2f8354999, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_Data\ogrDB.mdb" />
+    <Content Include="css\bootstrap.css" />
+    <Content Include="css\bootstrap.min.css" />
+    <Content Include="css\datepicker3.css" />
+    <Content Include="css\jquery.fancybox.css" />
+    <Content Include="css\style-single-page.css" />
+    <Content Include="css\style.css" />
+    <Content Include="css\stylee.css" />
+    <Content Include="css\styleIE.css" />
+    <Content Include="css\styles.css" />
+    <Content Include="font\css\animation.css" />
+    <Content Include="font\css\fontello-codes.css" />
+    <Content Include="font\css\fontello-embedded.css" />
+    <Content Include="font\css\fontello-ie7-codes.css" />
+    <Content Include="font\css\fontello-ie7.css" />
+    <Content Include="font\css\fontello.css" />
+    <Content Include="font\demo.html" />
+    <Content Include="font\LICENSE.txt" />
+    <Content Include="font\README.txt" />
+    <Content Include="giris.aspx" />
+    <Content Include="girisyap.aspx" />
+    <Content Include="img\1-thumb.jpg" />
+    <Content Include="img\1.jpg" />
+    <Content Include="img\2-thumb.jpg" />
+    <Content Include="img\2.jpg" />
+    <Content Include="img\3-thumb.jpg" />
+    <Content Include="img\3.jpg" />
+    <Content Include="img\4-thumb.jpg" />
+    <Content Include="img\4.jpg" />
+    <Content Include="img\5-thumb.jpg" />
+    <Content Include="img\5.jpg" />
+    <Content Include="img\6-thumb.jpg" />
+    <Content Include="img\6.jpg" />
+    <Content Include="img\dr.png" />
+    <Content Include="img\dummy.png" />
+    <Content Include="img\eye.png" />
+    <Content Include="img\fancybox_sprite.png" />
+    <Content Include="img\fb.png" />
+    <Content Include="img\go.png" />
+    <Content Include="img\logo.png" />
+    <Content Include="img\mini.png" />
+    <Content Include="img\pin.png" />
+    <Content Include="img\st.png" />
+    <Content Include="img\tw.png" />
+    <Content Include="img\user-big.jpg" />
+    <Content Include="img\user.jpg" />
+    <Content Include="js\bootstrap.js" />
+    <Content Include="js\bootstrap.min.js" />
+    <Content Include="js\index.js" />
+    <Content Include="js\jquery-1.10.1.min.js" />
+    <Content Include="js\jquery.fancybox.js" />
+    <Content Include="js\lumino.glyphs.js" />
+    <Content Include="kapat.aspx" />
+    <Content Include="odevKaldir.aspx" />
+    <Content Include="odevListe.aspx" />
+    <Content Include="odevYukle.aspx" />
+    <Content Include="ogrenciDuyuru.aspx" />
+    <Content Include="ogrenciGuncelle.aspx" />
+    <Content Include="ogrenciKayit.aspx" />
+    <Content Include="ogrenciListe.aspx" />
+    <Content Include="Web.config" />
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="adminPaneli.Master.cs">
+      <DependentUpon>adminPaneli.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="adminPaneli.Master.designer.cs">
+      <DependentUpon>adminPaneli.Master</DependentUpon>
+    </Compile>
+    <Compile Include="CKEditor.cs" />
+    <Compile Include="giris.aspx.cs">
+      <DependentUpon>giris.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="giris.aspx.designer.cs">
+      <DependentUpon>giris.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="girisyap.aspx.cs">
+      <DependentUpon>girisyap.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="girisyap.aspx.designer.cs">
+      <DependentUpon>girisyap.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="kapat.aspx.cs">
+      <DependentUpon>kapat.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="kapat.aspx.designer.cs">
+      <DependentUpon>kapat.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="odevKaldir.aspx.cs">
+      <DependentUpon>odevKaldir.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="odevKaldir.aspx.designer.cs">
+      <DependentUpon>odevKaldir.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="odevListe.aspx.cs">
+      <DependentUpon>odevListe.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="odevListe.aspx.designer.cs">
+      <DependentUpon>odevListe.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="odevYukle.aspx.cs">
+      <DependentUpon>odevYukle.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="odevYukle.aspx.designer.cs">
+      <DependentUpon>odevYukle.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ogrenciDuyuru.aspx.cs">
+      <DependentUpon>ogrenciDuyuru.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ogrenciDuyuru.aspx.designer.cs">
+      <DependentUpon>ogrenciDuyuru.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ogrenciGuncelle.aspx.cs">
+      <DependentUpon>ogrenciGuncelle.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ogrenciGuncelle.aspx.designer.cs">
+      <DependentUpon>ogrenciGuncelle.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ogrenciKayit.aspx.cs">
+      <DependentUpon>ogrenciKayit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ogrenciKayit.aspx.designer.cs">
+      <DependentUpon>ogrenciKayit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ogrenciListe.aspx.cs">
+      <DependentUpon>ogrenciListe.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ogrenciListe.aspx.designer.cs">
+      <DependentUpon>ogrenciListe.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Site1.Master.cs">
+      <DependentUpon>Site1.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Site1.Master.designer.cs">
+      <DependentUpon>Site1.Master</DependentUpon>
+    </Compile>
+    <Compile Include="vt.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Site1.Master" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="adminPaneli.Master" />
+    <None Include="font\config.json" />
+    <None Include="font\font\fontello.eot" />
+    <None Include="font\font\fontello.svg" />
+    <None Include="font\font\fontello.ttf" />
+    <None Include="font\font\fontello.woff" />
+    <None Include="img\mini.psd" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>10650</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
